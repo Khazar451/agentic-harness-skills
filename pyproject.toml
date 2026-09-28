@@ -1,0 +1,44 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "agentic-harness-skills"
+version = "0.1.0"
+description = "Production agentic harness skills runtime, CLI validator, and reusable skills catalog"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "Khazar" }
+]
+keywords = ["agents", "harness", "skills", "llm", "ai", "context-engineering", "permissions"]
+dependencies = [
+    "pydantic>=2.0.0",
+    "pyyaml>=6.0.0",
+    "rich>=13.0.0",
+    "click>=8.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "ruff>=0.3.0",
+]
+
+[project.scripts]
+agentic-harness-skills = "agentic_harness_skills.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/agentic_harness_skills"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W"]
