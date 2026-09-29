@@ -26,6 +26,7 @@ agentic-harness-skills/
 │   ├── cli.py                    # CLI interface (list, validate, inspect, benchmark)
 │   └── patterns/                 # Reference harness implementations
 ├── skills/                       # Curated Agent Skills Catalog (SKILL.md)
+│   ├── agentic-harness-patterns/ # Comprehensive harness patterns & 12 reference guides
 │   ├── memory-persistence/       # 3-tier memory management & 2-step save pattern
 │   ├── context-engineering/      # Progressive disclosure & reactive compaction
 │   └── tool-permission-guard/    # Fail-closed registry & permission pipelines

@@ -10,6 +10,7 @@ def test_discover_skills_in_skills_dir():
     loader = SkillCatalogLoader(search_paths=[skills_dir])
 
     discovered = loader.discover()
+    assert "agentic-harness-patterns" in discovered
     assert "memory-persistence" in discovered
     assert "context-engineering" in discovered
     assert "tool-permission-guard" in discovered
