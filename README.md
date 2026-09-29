@@ -130,6 +130,9 @@ uv run ruff check .
 
 ---
 
+## Acknowledgments
+- The pattern documentation in `skills/agentic-harness-patterns/` is based on the work by [Keli Wen](https://github.com/keli-wen/agentic-harness-patterns-skill).
+
 ## License
 
 MIT License. See [LICENSE](LICENSE) for details.
